@@ -41,7 +41,7 @@ Plotly.d3.csv("../../dataMining/avocado-with-regions.csv", function(err, rows){
             range: [86.8700008333, 138.870004167],
             type: 'linear'
         },
-        height: 720,
+        height: 700,
         width: 1125
     };
 
