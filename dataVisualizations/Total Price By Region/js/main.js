@@ -1,9 +1,17 @@
+var moment = require('moment');
+
 Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
 
     function unpack(rows, key, region) {
         return rows.map(function(row) {
             if(region == row['region'] && row['type'] == 'conventional')
             {
+                if(key === 'Date') {
+                    moment('2017-06-10T16:08:00').format('MM/DD/YYYY');
+                    // d = dateFormat(row[key], "yyyy-mm-dd");
+                    console.log(d)
+                    return d;
+                }
                 return row[key];
             }
         });

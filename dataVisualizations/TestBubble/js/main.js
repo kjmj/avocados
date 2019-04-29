@@ -1,4 +1,4 @@
-Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
+Plotly.d3.csv("../../dataMining/avocado-with-regions.csv", function(err, rows){
 
     function unpack(rows, key, region) {
         var total = 0;
@@ -16,7 +16,7 @@ Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
         return total;
     }
 
-    var regions = ['GreatLakes', 'Midsouth', 'Northeast', 'NorthernNewEngland', 'Plains', 'SouthCentral', 'Southeast', 'TotalUS', 'West', 'WestTexNewMexico'];
+    var regions = ['GreatLakes', 'Midsouth', 'Northeast', 'NorthernNewEngland', 'Plains', 'SouthCentral', 'Southeast', 'West', 'WestTexNewMexico'];
     var prices = new Array(10);
     var bags = new Array(10);
     var total = 0;
@@ -52,8 +52,9 @@ Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
         mode: 'markers',
         marker: {
             size: bags,//x_axis,
-            sizeref: 300.0,
-            sizemode: 'area'
+            sizeref: 75.0,
+            sizemode: 'area',
+            color: '#33cc33'
         }
     };
 
