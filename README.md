@@ -1,13 +1,13 @@
 ### View the Website
-**[The Website](https://kjmj.github.io/avocados/)**
+**[Our Project](https://kjmj.github.io/avocados/)**
 
 ### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are (usually) the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
 ### Advanced Usage
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+After installation, run `npm install` and then run `npm start` which will open up a preview of the website in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
 #### Gulp Tasks
 
