@@ -63,10 +63,10 @@ Plotly.d3.csv("../../dataMining/avocado-with-regions.csv", function(err, rows){
     var layout = {
         title: 'Region vs Average Price vs Total Number of Bags Sold',
         xaxis: {title: "Region"},
-        yaxis: {title: "Average Price"},
+        yaxis: {title: "Average Price (USD)"},
         showlegend: false,
         height: 700,
-        width: 1500
+        width: 1125
     };
 
     Plotly.newPlot('myDiv', data, layout);

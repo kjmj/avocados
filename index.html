@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>Avocados</title>
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -46,7 +46,7 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">Data Analytics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Something else?</a>
+            <a class="nav-link js-scroll-trigger" href="#avocadoFacts">Avocado Facts</a>
           </li>
         </ul>
       </div>
@@ -59,11 +59,12 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
           <h1 class="text-uppercase text-white font-weight-bold">Visualizing Avocado Data</h1>
+          <h5 class="text-uppercase text-white font-weight-bold">Ken Morton and Ashley Schuliger</h5>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">We sought out to analyze and visualize data about avocados for our final project in Foundations of Data Science</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Continue</a>
+          <p class="text-white-75 font-weight-light mb-5">Understanding data about avocados</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About the Project</a>
         </div>
       </div>
     </div>
@@ -74,10 +75,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">Description about our project</h2>
+          <h2 class="text-white mt-0">Our project</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">More description</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          <p class="text-white-50 mb-4">We completed this project as a capstone project for DS 3001: Introduction to Data Science at WPI. We first selected the dataset we were using from <a href="https://www.kaggle.com/neuromusic/avocado-prices" target="_blank"><font color="FFFFFF">Kaggle</font></a>. Then, we cleaned the data and removed bad entries. For the analysis part of the project, we considered regions and filtered out individual cities to make the results less noisy. We hoped to understand avocado prices and consumption by region in the United States.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">View the Map</a>
         </div>
       </div>
     </div>
@@ -88,42 +89,62 @@
     <div class="container">
       <h2 class="text-center mt-0">Map</h2>
       <hr class="divider my-4">
-      <embed src="dataVisualizations/Map/map-by-total-bags.html" width="100%" height="700px">
+
+      <p class="text-center mt-0">This map buckets sizes the bubbles by total number of avocado bags purchased. They are broken up into 'buckets', and colored based on bucket. From this map, we can tell the Los Angeles and New York are the top consumers of avocados.</p>
+      <embed src="dataVisualizations/Map/map-by-total-bags.html" width="105%" height="700px">
+
+      <div class="row justify-content-center">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Data Analytics</a>
+      </div>
     </div>
   </section>
 
   <!-- Portfolio Section -->
   <section id="portfolio">
-    <embed src="dataVisualizations/Bag%20Size%20vs%20Region%20Stacked%20Bar/stacked-bar.html" width="100%" height="700px">
-  </section>
+    <div class="container">
+      <h2 class="text-center mt-0">Data Analytics</h2>
+      <hr class="divider my-4">
 
-  <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+      <h4 class="text-center mt-0">Number of Avocado Bags Sold by Size Per Region</h4>
+      <p class="text-center mt-0">The size of an avocado does not indicate its ripeness or quality. Since the avocados seed grows with the fruit, the seed-to-fruit ratio will always be close to the same. Small avocados are the perfect size for on-the-go snacks, while larger avocados are best used for family sized portions.</p>
+      <p class="text-center mt-0">We plotted the number of bags sold that had small, large, and extra large avocados by region. We found the the vast majority of regions purchased small avocados, with the exception being the West region, purchasing about 40% large avocados.</p>
+      <embed src="dataVisualizations/Bag%20Size%20vs%20Region%20Stacked%20Bar/stacked-bar.html" width="105%" height="700px">
+
+      <h4 class="text-center mt-0">Conventional vs Organic by Region</h4>
+      <p class="text-center mt-0">Organic foods have gained popularity in the recent years. By complying with the standards of organic farming, companies can provide a different quality product to a consumer. It is important to understand the most popular types of avocados in a region in order to best market towards that region in the future.</p>
+      <p class="text-center mt-0">We determined that most regions purchase conventional avocados over organic avocados. The exception in this case was Northern New England, encompassing Vermont, New Hampshire, and Maine. This region purchased nearly 3x as many organic avocados as the other regions!</p>
+      <embed src="dataVisualizations/Conventional%20vs%20Organic/PieCharts.html" width="105%" height="700px">
+
+      <h4 class="text-center mt-0">Region vs Average Price vs Total Number of Bags Sold</h4>
+      <p class="text-center mt-0">In order to price products effectively, a company needs to understand the average price of its product in a certain region. From there, they can go and analyse other trends in that region to determine the optimal price for a product.</p>
+      <p class="text-center mt-0">We plotted region vs average price, with the size of the bubble representing the total number of avocado bags sold in that region. We did not find a correlation between average price and total number of bags sold, but did find the data regarding total number of bags sold interesting. The west region purchased the most bags of avocados, while Northern New England, the Plains, and WestTex-New Mexico purchased the fewest number of avocado bags.</p>
+      <embed src="dataVisualizations/TestBubble/BubbleHtml.html" width="105%" height="700px">
+
+      <h4 class="text-center mt-0">Time vs Average Price per Region</h4>
+      <p class="text-center mt-0">Companies must understand the price at which to sell their product during different time periods in a year. For instance, if it is more expensive to grow and ship avocados in the winter, the price must be raised.</p>
+      <p class="text-center mt-0">We plotted different regions based on price over the course of three years. We noticed that the price of avocados tends to climb from July to November, and it remains more stable from January to July.</p>
+      <embed src="dataVisualizations/Total%20Price%20By%20Region/TimeSeries.html" width="105%" height="700px">
     </div>
+
+    <div class="row justify-content-center">
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#avocadoFacts">Fun Avocado Facts</a>
+    </div>
+    <hr class="divider light my-4">
+
+
   </section>
 
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
+  <!-- Avocado Facts Section -->
+  <section class="page-section bg-primary" id="avocadoFacts">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+          <h2 class="text-white mt-0">Avocado Facts!</h2>
+          <hr class="divider light my-4">
+          <h4 class="text-white-50 mb-5">1. Avocados are actually a fruit</h4>
+          <h4 class="text-white-50 mb-5">2. In Brazil and Indonesia, it is common to eat avocados with chocolate syrup</h4>
+          <h4 class="text-white-50 mb-5">3. In the United States, the Chipotle restaurant chain uses 97,000 pounds of avocados per day</h4>
+          <h4 class="text-white-50 mb-5">4. In 1989, U.S. avocado consumption was around 1.1 pounds per person each year. Now Americans devour over seven pounds per person each year</h4>
         </div>
       </div>
     </div>
@@ -133,6 +154,7 @@
   <footer class="bg-light py-5">
     <div class="container">
       <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+      <div class="small text-center text-muted">Avocado facts courtesy of https://www.factretriever.com/avocado-facts/</div>
     </div>
   </footer>
 

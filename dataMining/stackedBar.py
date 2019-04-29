@@ -30,7 +30,9 @@ data = [
 
 layout = go.Layout(
     barmode='stack',
-    title='Avocado Bag Size By Region'
+    title='Number of Avocado Bags Sold by Size Per Region',
+    xaxis={'title': 'Region'},
+    yaxis={'title': "Number of Bags Sold (Million)"},
 )
 
 fig = go.Figure(data=data, layout=layout)

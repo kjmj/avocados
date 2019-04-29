@@ -1,16 +1,12 @@
-var moment = require('moment');
-
-Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
+Plotly.d3.csv("../../dataMining/avocado-with-regions.csv", function(err, rows){
 
     function unpack(rows, key, region) {
         return rows.map(function(row) {
             if(region == row['region'] && row['type'] == 'conventional')
             {
+                // special format for dates
                 if(key === 'Date') {
-                    moment('2017-06-10T16:08:00').format('MM/DD/YYYY');
-                    // d = dateFormat(row[key], "yyyy-mm-dd");
-                    console.log(d)
-                    return d;
+                    return new Date(row[key]);
                 }
                 return row[key];
             }
@@ -40,13 +36,13 @@ Plotly.d3.csv("../../dataMining/test.csv", function(err, rows){
             type: 'date'
         },
         yaxis: {
-            title: 'Average Price',
+            title: 'Average Price (USD)',
             autorange: true,
             range: [86.8700008333, 138.870004167],
             type: 'linear'
         },
         height: 720,
-        width: 1500
+        width: 1125
     };
 
     Plotly.newPlot('myDiv', data, layout);
