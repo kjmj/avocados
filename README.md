@@ -1,5 +1,4 @@
-### View the Website
-**[Our Project](https://kjmj.github.io/avocados/)**
+### **[Our Project](https://kjmj.github.io/avocados/)**
 
 ### Basic Usage
 

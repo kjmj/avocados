@@ -136,7 +136,7 @@ Plotly.d3.csv("../../dataMining/avocado-with-regions.csv", function(err, rows){
         title: "Conventional vs Organic by Region",
         showlegend: true,
         grid: {rows: 4, columns: 3},
-        height: 750,
+        height: 700,
         annotations: annotations
     };
 
