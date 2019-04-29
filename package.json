@@ -31,9 +31,12 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
         "bootstrap": "4.3.1",
+        "d3": "^5.9.2",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0"
+        "magnific-popup": "^1.1.0",
+        "moment": "^2.24.0",
+        "pandas-js": "^0.2.4"
     },
     "devDependencies": {
         "browser-sync": "2.26.3",
